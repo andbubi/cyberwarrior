@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://w01q2535v14m"]
+
+[ext_resource type="Script" uid="uid://bwtt2vlnraes6" path="res://question_system/question_system.gd" id="1_u16qg"]
+[ext_resource type="Texture2D" uid="uid://uj1pp47ewhnu" path="res://question_system/Sprites/text-bubble.png" id="2_d3dio"]
+[ext_resource type="FontFile" uid="uid://ukr56llnxth" path="res://Fonts/Orbitron/Orbitron-VariableFont_wght.ttf" id="3_s4xeg"]
+[ext_resource type="FontFile" uid="uid://ba5cyxcuqygwr" path="res://Fonts/Orbitron/static/Orbitron-Bold.ttf" id="4_ejq3f"]
+[ext_resource type="FontFile" uid="uid://dfy2c4dnjiib0" path="res://Fonts/Orbitron/static/Orbitron-Medium.ttf" id="5_ejq3f"]
+
+[sub_resource type="Gradient" id="Gradient_d3dio"]
+colors = PackedColorArray(0, 0, 0, 0.24705882, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ocj1l"]
+gradient = SubResource("Gradient_d3dio")
+fill_to = Vector2(0, 0)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ocj1l"]
+content_margin_left = 14.0
+content_margin_top = 10.0
+content_margin_right = 14.0
+content_margin_bottom = 10.0
+texture = ExtResource("2_d3dio")
+texture_margin_left = 16.0
+texture_margin_top = 16.0
+texture_margin_right = 16.0
+texture_margin_bottom = 16.0
+
+[node name="QuestionSystem" type="CanvasLayer" unique_id=1215357347]
+script = ExtResource("1_u16qg")
+
+[node name="QuestionUI" type="Control" parent="." unique_id=1092652248]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1281.0
+offset_bottom = 723.0
+
+[node name="TextureRect" type="TextureRect" parent="QuestionUI" unique_id=260169523]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_ocj1l")
+
+[node name="PanelContainer" type="PanelContainer" parent="QuestionUI" unique_id=648907535]
+layout_mode = 0
+offset_left = 189.0
+offset_top = 154.0
+offset_right = 1096.0
+offset_bottom = 613.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_ocj1l")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="QuestionUI" unique_id=982097549]
+layout_mode = 0
+offset_left = 218.0
+offset_top = 235.0
+offset_right = 1072.0
+offset_bottom = 400.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_s4xeg")
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "This is a cybersecurity related question."
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="QuestionUI" unique_id=1382281861]
+layout_mode = 0
+offset_left = 191.0
+offset_top = 186.0
+offset_right = 1096.0
+offset_bottom = 241.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_ejq3f")
+theme_override_font_sizes/font_size = 32
+text = "Question"
+horizontal_alignment = 1
+
+[node name="Yes" type="Button" parent="QuestionUI" unique_id=1123544550]
+layout_mode = 0
+offset_left = 350.0
+offset_top = 420.0
+offset_right = 940.0
+offset_bottom = 495.0
+theme_override_fonts/font = ExtResource("5_ejq3f")
+theme_override_font_sizes/font_size = 20
+text = "Yes"
+text_overrun_behavior = 6
+
+[node name="No" type="Button" parent="QuestionUI" unique_id=1367696762]
+layout_mode = 0
+offset_left = 350.0
+offset_top = 500.0
+offset_right = 940.0
+offset_bottom = 575.0
+theme_override_fonts/font = ExtResource("5_ejq3f")
+theme_override_font_sizes/font_size = 20
+text = "No"

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cknfiph8784rn"]
+
+[ext_resource type="PackedScene" uid="uid://nmthhn41xas" path="res://Player/player.tscn" id="1_wt17y"]
+[ext_resource type="PackedScene" uid="uid://bmraaejrcdnnw" path="res://TileMaps/floor.tscn" id="6_4bqqs"]
+
+[node name="Playground" type="Node2D" unique_id=1445471847]
+
+[node name="Player" parent="." unique_id=2056356127 instance=ExtResource("1_wt17y")]
+position = Vector2(1425, 1000)
+
+[node name="Floor" parent="." unique_id=554029872 instance=ExtResource("6_4bqqs")]
+position = Vector2(0.1885376, -0.5024414)

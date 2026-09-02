@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bioqqt6up4mss"]
+
+[ext_resource type="Script" uid="uid://cva2a4hnavmjp" path="res://player_hud.gd" id="1_35v5m"]
+[ext_resource type="FontFile" uid="uid://ukr56llnxth" path="res://Fonts/Orbitron/Orbitron-VariableFont_wght.ttf" id="2_4orx5"]
+
+[node name="Correct" type="CanvasLayer" unique_id=1557810189]
+script = ExtResource("1_35v5m")
+
+[node name="Control" type="Control" parent="." unique_id=1037517532]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Correct" type="RichTextLabel" parent="Control" unique_id=1072655803]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 66.0
+offset_right = 1281.0
+offset_bottom = 157.0
+theme_override_fonts/normal_font = ExtResource("2_4orx5")
+theme_override_font_sizes/normal_font_size = 30
+text = "Correct!"
+horizontal_alignment = 1
+vertical_alignment = 1

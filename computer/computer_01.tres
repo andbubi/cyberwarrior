@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ComputerResource" format=3 uid="uid://dwqnwm0w64kbs"]
+
+[ext_resource type="Script" uid="uid://q85nl67wk10b" path="res://computer/computer_resource.gd" id="1_w731s"]
+
+[resource]
+script = ExtResource("1_w731s")
+question = "You receive an email with poor grammar or spelling. It is sign that could be phishig attempt?"
+right_answer = "Yes"
+metadata/_custom_type_script = "uid://q85nl67wk10b"

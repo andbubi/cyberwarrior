@@ -1,0 +1,312 @@
+[gd_scene format=3 uid="uid://d4sfaosbw8u7"]
+
+[ext_resource type="Texture2D" uid="uid://dlv1llb6tccv7" path="res://TileMaps/Sprites/Props.png" id="1_3gc1l"]
+[ext_resource type="Script" uid="uid://d0hnypoklxjm3" path="res://computer/computer.gd" id="1_txyu3"]
+[ext_resource type="Script" uid="uid://ihk7qc3601gl" path="res://computer/question_interaction.gd" id="3_678jo"]
+[ext_resource type="Texture2D" uid="uid://bnktmpmytb1ef" path="res://Interactibles/dialog_interactable.png" id="3_a1bh8"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_txyu3"]
+texture = ExtResource("1_3gc1l")
+margins = Vector2i(20, 3)
+texture_region_size = Vector2i(41, 32)
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+16:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+16:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+7:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+16:3/0 = 0
+17:3/0 = 0
+18:3/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+16:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+16:6/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+12:7/0 = 0
+13:7/0 = 0
+14:7/0 = 0
+15:7/0 = 0
+16:7/0 = 0
+17:7/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+11:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+16:8/0 = 0
+17:8/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+11:9/0 = 0
+12:9/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+7:11/0 = 0
+8:11/0 = 0
+10:11/0 = 0
+11:11/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+7:12/0 = 0
+8:12/0 = 0
+10:12/0 = 0
+11:12/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+7:14/0 = 0
+8:14/0 = 0
+10:14/0 = 0
+11:14/0 = 0
+1:15/0 = 0
+2:15/0 = 0
+4:15/0 = 0
+5:15/0 = 0
+7:15/0 = 0
+8:15/0 = 0
+11:15/0 = 0
+12:15/0 = 0
+1:16/0 = 0
+2:16/0 = 0
+3:16/0 = 0
+10:16/0 = 0
+11:16/0 = 0
+12:16/0 = 0
+1:17/0 = 0
+2:17/0 = 0
+3:17/0 = 0
+9:17/0 = 0
+10:17/0 = 0
+11:17/0 = 0
+0:0/0 = 0
+0:7/0 = 0
+0:6/0 = 0
+0:8/0 = 0
+0:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-20.45713, -16.278652, 20.631233, -16.10455, 20.80534, 15.582241, -20.202461, 15.575947)
+
+[sub_resource type="TileSet" id="TileSet_a1bh8"]
+physics_layer_0/collision_layer = 16
+physics_layer_0/collision_mask = 4
+sources/0 = SubResource("TileSetAtlasSource_txyu3")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_txkba"]
+size = Vector2(96, 32)
+
+[sub_resource type="Animation" id="Animation_kq0ew"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5, -14)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_xcml3"]
+resource_name = "completed_animation"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(3.75, -63), Vector2(3.75, -63)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_txkba"]
+resource_name = "question_mark_animation"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(3.75, -63), Vector2(3.75, -70)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k7l5t"]
+_data = {
+&"RESET": SubResource("Animation_kq0ew"),
+&"completed_animation": SubResource("Animation_xcml3"),
+&"question_mark_animation": SubResource("Animation_txkba")
+}
+
+[node name="Computer" type="Node2D" unique_id=30992686]
+script = ExtResource("1_txyu3")
+
+[node name="TileMap" type="TileMap" parent="." unique_id=380995095]
+scale = Vector2(2.5, 2.5)
+tile_set = SubResource("TileSet_a1bh8")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 0, 8, 65536, 131072, 8)
+
+[node name="QuestionInteraction" type="Area2D" parent="." unique_id=1558667053]
+position = Vector2(19, 23)
+collision_layer = 16
+collision_mask = 4
+monitorable = false
+script = ExtResource("3_678jo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="QuestionInteraction" unique_id=1002026014]
+position = Vector2(1, 30)
+shape = SubResource("RectangleShape2D_txkba")
+
+[node name="Sprite2D" type="Sprite2D" parent="QuestionInteraction" unique_id=1276920682]
+position = Vector2(0.5, -14)
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("3_a1bh8")
+hframes = 2
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="QuestionInteraction" unique_id=1153463166]
+process_mode = 3
+libraries/ = SubResource("AnimationLibrary_k7l5t")
+autoplay = &"question_mark_animation"

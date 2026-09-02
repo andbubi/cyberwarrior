@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://dbhalre1vgb5v"]
+
+[ext_resource type="FontFile" uid="uid://dfy2c4dnjiib0" path="res://Fonts/Orbitron/static/Orbitron-Medium.ttf" id="1_6ct7c"]
+[ext_resource type="Script" uid="uid://fkhyyygw7mhk" path="res://title_scene/pause_scene.gd" id="1_e7xhh"]
+[ext_resource type="FontFile" uid="uid://ukr56llnxth" path="res://Fonts/Orbitron/Orbitron-VariableFont_wght.ttf" id="2_2kiki"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_pd1mi"]
+
+[node name="PauseScene" type="CanvasLayer" unique_id=1607038828]
+script = ExtResource("1_e7xhh")
+
+[node name="Control" type="Control" parent="." unique_id=659906308]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 5.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=1549534580]
+modulate = Color(0, 0, 0, 0.22745098)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("CanvasTexture_pd1mi")
+
+[node name="Label" type="Label" parent="Control" unique_id=561216531]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 91.0
+offset_right = 1280.0
+offset_bottom = 309.0
+theme_override_fonts/font = ExtResource("1_6ct7c")
+theme_override_font_sizes/font_size = 80
+text = "Paused"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="Control" unique_id=1800166673]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 516.0
+offset_top = 446.0
+offset_right = -506.0
+offset_bottom = -183.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_2kiki")
+theme_override_font_sizes/font_size = 32
+text = "Resume"
